@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+[class*="__conteiner"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+.arena__fon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clown__jangler{
+	position: absolute;
+	top: 300px;
+	left: 230px;
+
+	}
+
+
+.jangler__pins--yellow {
+	position: absolute;
+	top: -20px;
+	right: 105%;
+	transition:transform .8s ease-in-out;
+}
+.jangler__pins--green {
+	position: absolute;
+	top: -150px;
+	right:65%;
+	transition:transform .8s ease-in-out;
+}
+.jangler__pins--purple{ 
+	position: absolute;
+	top: -260px;
+	left: 100px;
+	transition:transform .8s ease-in-out;
+}
+.jangler__pins--red {
+	position: absolute;
+	top: -130px;
+	left: 230px;
+	transition:transform .8s ease-in-out;
+}
+.jangler__pins--blue {
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	transition:transform .8s ease-in-out;
+}
+.clown__jangler:hover .jangler__pins--blue{
+	transform: rotate(360deg);
+}
+.clown__jangler:hover .jangler__pins--red{
+	transform: rotate(-360deg);
+}
+.clown__jangler:hover .jangler__pins--purple{
+	transform: rotate(360deg);
+}
+.clown__jangler:hover .jangler__pins--green{
+	transform: rotate(-360deg);
+}
+.clown__jangler:hover .jangler__pins--yellow{
+	transform: rotate(360deg);
+}
+.elephant__stend{
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	top: 550px;
+	right: 400px;
+}
+.elephant__body{
+	position: absolute;
+	top: -97px;
+	left: 6px;
+}
+.elephant__head{
+	position: absolute;
+	top: -200px;
+}
+.elephant__ball{
+	position: absolute;
+	top: -200px;
+	left: -25px;
+	transition:transform .8s ease-in-out;
+}
+.elephant__body:hover .elephant__ball{
+top: -400px;
+transform: rotate(360deg);
+}
+.elephant__body:hover .elephant__head{
+transform: rotate(20deg);
+}
